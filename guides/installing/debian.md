@@ -4,7 +4,7 @@ Code that you should run in your console/SSH application is `written like this`.
 
 This guide covers the installation via CLI and *does not* include instructions for installing a desktop environment for use with a VNC server.
 
-## Pre-Requisitesss
+## Pre-Requisites
 
 ### In General
 * A basic understanding of Linux based Operating Systems.
