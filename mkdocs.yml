@@ -115,7 +115,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - git-revision-date-localized:
       type: timeago
-      fallback_to_build_date: true
+      fallback_to_build_date: false
 
 extra_css:
   - stylesheets/extra.css
