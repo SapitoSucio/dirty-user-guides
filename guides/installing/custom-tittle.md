@@ -95,7 +95,7 @@ enum e_title_table : uint16 {
 
 ## NPC Code
 
-You can use this NPC Script to give yourself the achievement, remember to check the achievement window and claim the reward.
+You can use this NPC Script to give yourself the achievement.
 
 ```cpp
 prontera,155,179,5	script	FroggoNPC	810,{
@@ -103,6 +103,9 @@ prontera,155,179,5	script	FroggoNPC	810,{
 	end;
 }
 ```
+!!! warning "Remember to check the achievement window and claim the reward"
+
+## Extra Information
 
 !!! info "You can create a Title without creating an Achievement"
 	But you won't see it in the title window unless you create and complete the achievement that rewards you with the title, otherwise you'll have to find another way to use and apply the title, such as SQL or custom SRC code.
