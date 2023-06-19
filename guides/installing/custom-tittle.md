@@ -5,9 +5,9 @@
 
 The Title System in Ragnarok Online allows players to earn titles by completing certain activities or achievements in the game.
 
-These achievements[^1] can include exploring new areas, performing specific quests, reaching certain levels, or defeating powerful bosses.
+These achievements[^1] can include exploring new areas, completing certain quests, reaching certain levels, or defeating powerful bosses.
 
-When a player obtains a title, it can be equipped on their character, and it will be displayed before their name, allowing other players to see the special achievements or activities that the player has completed.
+When a player earns a title, it can be equipped on their character, and it will be displayed before their name, allowing other players to see the special achievements or activities that the player has completed.
 
 [^1]: [Achievement System](https://irowiki.org/wiki/Achievement_System)
 
@@ -52,7 +52,7 @@ Here we will declare a new achievement with the ID of `250000`
 
 !!! info "Remember to include (or not) the comma"
 
-    If the new achievement you are adding it's the last one, you don't need to put a comma at the end, but if you have other achievements below your custom one, then you need to add a comma before the last `}`
+    If the new achievement you're adding is the last one, you don't need to put a comma at the end, but if you have other achievements under your custom achievement, then you need to put a comma before the last `}`.
 
 On yor `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
 
@@ -93,10 +93,6 @@ enum e_title_table : uint16 {
 };
 ```
 
-
-
-
-
 ## NPC Code
 
 You can use this NPC Script to give yourself the quest, remember to check the achievement window and claim the reward.
@@ -109,4 +105,4 @@ prontera,155,179,5	script	FroggoNPC	810,{
 ```
 
 !!! info "You can create a Title without creating an Achievement"
-	But you won't see it on the Title Window, unless you create and complete the achievement which will reward to you the Title, otherwise you will have to find another way to use and apply the title, like SQL or custom SRC code.
+	But you won't see it in the title window unless you create and complete the achievement that rewards you with the title, otherwise you'll have to find another way to use and apply the title, such as SQL or custom SRC code.
