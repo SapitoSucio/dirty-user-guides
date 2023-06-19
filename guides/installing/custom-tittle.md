@@ -65,7 +65,7 @@ title_tbl = {
 	[1043] = "Strouf Slayer",
 	[1044] = "Sting Slayer",
 	[1045] = "Conqueror of Illusion",
-	[1046] = "King Maker"
+	[1046] = "King Maker",
 	[1500] = "Froggy Testeru"
 }
 ```
