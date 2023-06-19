@@ -64,11 +64,11 @@ title_tbl = {
 	[1044] = "Sting Slayer",
 	[1045] = "Conqueror of Illusion",
 	[1046] = "King Maker"
-	[1500] = "Froggo Tester"
+	[1500] = "Froggy Testeru"
 }
 ```
 ??? info "Remember; TitleID it's one thing and AchievementID it's another thing..."
-	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggo Tester" title
+	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggy Testeru" title
 
 
 ## Server Side
@@ -95,7 +95,7 @@ enum e_title_table : uint16 {
 
 ## NPC Code
 
-You can use this NPC Script to give yourself the quest, remember to check the achievement window and claim the reward.
+You can use this NPC Script to give yourself the achievement, remember to check the achievement window and claim the reward.
 
 ```cpp
 prontera,155,179,5	script	FroggoNPC	810,{
