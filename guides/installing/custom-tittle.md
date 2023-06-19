@@ -75,7 +75,7 @@ title_tbl = {
 
 ### Server Side
 
-On `achievement.hpp`, search for
+On `src/map/achievement.hpp`, search for
 
 ```cpp
 enum e_title_table : uint16 {
