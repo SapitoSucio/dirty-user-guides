@@ -15,7 +15,7 @@ When a player obtains a title, it can be equipped on their character, and it wil
 
 On your `System Folder`, open up `achievement_list_EN.lub` file.
 
-Here you have to declare the new achievement
+Here we will declare a new achievement with the ID of `250000`
 
 ```lua hl_lines="15-30"
 [240020] = {
@@ -67,6 +67,8 @@ title_tbl = {
 	[1500] = "Froggo Tester"
 }
 ```
+??? tip "Remember; TitleID it's one thing and AchievementID it's another thing..."
+	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggo Tester" title
 
 
 ## Server Side
