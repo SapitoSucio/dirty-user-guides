@@ -1,5 +1,5 @@
 <figure markdown>
-  ![Ragnarok Title System](https://i.imgur.com/VDyQ5Ox.png)
+  ![In-Game Title Sample](https://i.imgur.com/VDyQ5Ox.png)
   <figcaption>Ragnarok Title System</figcaption>
 </figure>
 
@@ -13,13 +13,51 @@ When a player earns a title, it can be equipped on their character, and it will 
 
 ## Modifications
 
+### Server Side
+
+On `src/map/achievement.hpp`, search for
+
+```cpp
+enum e_title_table : uint16 {
+	TITLE_NONE = 0,
+	TITLE_BASE = 1000,
+	TITLE_MAX = 1046
+};
+```
+
+And edit `#!css TITLE_MAX` value as you wish, in this case I'll put `2000`
+
+```cpp hl_lines="4"
+enum e_title_table : uint16 {
+	TITLE_NONE = 0,
+	TITLE_BASE = 1000,
+	TITLE_MAX = 2000
+};
+```
+
 ### Client Side
+
+On your `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
+
+```lua hl_lines="8" title="data\luafiles514\lua files\datainfo\titletable.lub"
+title_tbl = {
+    -- Rest of titles
+	[1042] = "Undead Slayer",
+	[1043] = "Strouf Slayer",
+	[1044] = "Sting Slayer",
+	[1045] = "Conqueror of Illusion",
+	[1046] = "King Maker",
+	[1500] = "Froggy Testeru"
+}
+```
+??? info "Remember; TitleID it's one thing and AchievementID it's another thing..."
+	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggy Testeru" title
 
 On your `System Folder`, open up `achievement_list_EN.lub` file.
 
 Here we will declare a new achievement with the ID of `250000`
 
-```lua hl_lines="15-30"
+```lua hl_lines="15-30" title="System\achievement_list_EN.lub"
 [240020] = {
     UI_Type = 0,
     group = "GOAL_ACHIEVE",
@@ -54,46 +92,7 @@ Here we will declare a new achievement with the ID of `250000`
 
 !!! info "Remember to include (or not) the comma"
 
-    If the new achievement you're adding is the last one, you don't need to put a comma at the end, but if you have other achievements under your custom achievement, then you need to put a comma before the last `}`.
-
-On your `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
-
-```lua hl_lines="8"
-title_tbl = {
-    -- Rest of titles
-	[1042] = "Undead Slayer",
-	[1043] = "Strouf Slayer",
-	[1044] = "Sting Slayer",
-	[1045] = "Conqueror of Illusion",
-	[1046] = "King Maker",
-	[1500] = "Froggy Testeru"
-}
-```
-??? info "Remember; TitleID it's one thing and AchievementID it's another thing..."
-	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggy Testeru" title
-
-
-### Server Side
-
-On `src/map/achievement.hpp`, search for
-
-```cpp
-enum e_title_table : uint16 {
-	TITLE_NONE = 0,
-	TITLE_BASE = 1000,
-	TITLE_MAX = 1046
-};
-```
-
-And edit `TITLE_MAX` value as you wish, in this case I'll put `2000`
-
-```cpp hl_lines="4"
-enum e_title_table : uint16 {
-	TITLE_NONE = 0,
-	TITLE_BASE = 1000,
-	TITLE_MAX = 2000
-};
-```
+    If the new achievement you're adding is the last one, you don't need to put a comma at the end, but if you have other achievements under your custom achievement, then you need to put a comma before the last `}`
 
 ## NPC Code
 
@@ -105,6 +104,7 @@ prontera,155,179,5	script	FroggoNPC	810,{
 	end;
 }
 ```
+
 !!! warning "Remember to check the achievement window and claim the reward"
 
 ## Extra Information
