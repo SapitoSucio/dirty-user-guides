@@ -67,7 +67,7 @@ title_tbl = {
 	[1500] = "Froggo Tester"
 }
 ```
-??? tip "Remember; TitleID it's one thing and AchievementID it's another thing..."
+??? info "Remember; TitleID it's one thing and AchievementID it's another thing..."
 	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggo Tester" title
 
 
