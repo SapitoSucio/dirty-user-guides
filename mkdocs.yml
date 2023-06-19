@@ -127,6 +127,7 @@ plugins:
           - index.md
       enabled: true
       strict: true
-
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/smoothScrolling.js
