@@ -11,7 +11,9 @@ When a player earns a title, it can be equipped on their character, and it will 
 
 [^1]: [Achievement System](https://irowiki.org/wiki/Achievement_System)
 
-## Client Side
+## Modifications
+
+### Client Side
 
 On your `System Folder`, open up `achievement_list_EN.lub` file.
 
@@ -71,7 +73,7 @@ title_tbl = {
 	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggy Testeru" title
 
 
-## Server Side
+### Server Side
 
 On `achievement.hpp`, search for
 
