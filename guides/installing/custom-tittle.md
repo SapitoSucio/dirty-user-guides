@@ -56,7 +56,7 @@ Here we will declare a new achievement with the ID of `250000`
 
     If the new achievement you're adding is the last one, you don't need to put a comma at the end, but if you have other achievements under your custom achievement, then you need to put a comma before the last `}`.
 
-On yor `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
+On your `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
 
 ```lua hl_lines="8"
 title_tbl = {
