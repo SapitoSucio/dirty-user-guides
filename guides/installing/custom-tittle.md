@@ -56,7 +56,7 @@ Here you have to declare the new achievement
 
 On yor `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
 
-```lua hl_lines="5"
+```lua hl_lines="8"
 title_tbl = {
     -- Rest of titles
 	[1042] = "Undead Slayer",

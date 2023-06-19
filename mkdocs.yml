@@ -15,9 +15,11 @@ nav:
       - Debian: installing/debian.md
       - Docker: installing/docker.md
       - WSL: installing/WSL.md
-      - Custom Title: installing/custom-tittle.md
+      
   # - Network Settings: network-settings.md
   # - MySQL Tables: mysql-tables.md
+    - Client & Server Side:
+      - Custom Title: installing/custom-tittle.md
     - MSVS Debugging: debugging.md
     - Extensions: extensions.md
     - Links:
@@ -102,6 +104,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences:
+      preserve_tabs: true
       custom_fences:
         - name: mermaid
           class: mermaid
@@ -118,7 +121,6 @@ plugins:
   - git-revision-date-localized:
       type: timeago
       custom_format: "%d. %B %Y"
-      timezone: Europe/Amsterdam
       locale: en
       fallback_to_build_date: false
       exclude:
