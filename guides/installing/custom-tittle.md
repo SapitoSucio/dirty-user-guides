@@ -37,7 +37,7 @@ enum e_title_table : uint16 {
 
 ### Client Side
 
-On your `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and add append your custom title.
+On your `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and append your custom title like this: 
 
 ```lua hl_lines="8" title="data\luafiles514\lua files\datainfo\titletable.lub"
 title_tbl = {
@@ -50,8 +50,9 @@ title_tbl = {
 	[1500] = "Froggy Testeru"
 }
 ```
+
 ??? info "Remember; TitleID it's one thing and AchievementID it's another thing..."
-	Here we declared our custom title with and ID of 1500, previously we declared the AchievementID of 250000, which will reward this "Froggy Testeru" title
+	Here we declared our custom title with an ID of `1500`, previously we declared the AchievementID of `250000`, which will reward this `Froggy Testeru` title
 
 On your `System Folder`, open up `achievement_list_EN.lub` file.
 
@@ -97,6 +98,7 @@ Here we will declare a new achievement with the ID of `250000`
 ## NPC Code
 
 You can use this NPC Script to give yourself the achievement.
+You have to put the AchievementID you declared previously in the `achievement_list_EN.lub` file
 
 ```cpp
 prontera,155,179,5	script	FroggoNPC	810,{
@@ -110,4 +112,4 @@ prontera,155,179,5	script	FroggoNPC	810,{
 ## Extra Information
 
 !!! info "You can create a Title without creating an Achievement"
-	But you won't see it in the title window unless you create and complete the achievement that rewards you with the title, otherwise you'll have to find another way to use and apply the title, such as SQL or custom SRC code.
+	But you won't see it in the title window, for instance, the player can't equip it by normal means, unless you create and complete the achievement that rewards you with the title, otherwise you'll have to find another way to use and apply the title, such as SQL or custom SRC code.
