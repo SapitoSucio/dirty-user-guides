@@ -56,7 +56,7 @@ title_tbl = {
 
 On your `System Folder`, open up `achievement_list_EN.lub` file.
 
-Here we will declare a new achievement with the ID of `250000`
+Here we will declare a new achievement with an ID of `250000`
 
 ```lua hl_lines="15-30" title="System\achievement_list_EN.lub"
 [240020] = {
