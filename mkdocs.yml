@@ -37,6 +37,7 @@ theme:
   favicon: img/favicon.ico
   logo: img/ra_user_guides_logo.png
   name: material
+  custom_dir: guides/overrides
   features:
     - announce.dismiss
     - content.code.annotate
@@ -119,8 +120,9 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
+  - git-authors
   - git-committers:
-      repository: sapitosucio/dirty-user-guides
+      repository: rathena/user-guides
       branch: master
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
