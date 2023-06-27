@@ -120,10 +120,16 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
-  - git-authors
+  - git-authors:
+          sort_authors_by: contribution
+          show_email_address: false
+          authorship_threshold_percent: 10
+          exclude:
+              - index.md
   - git-committers:
       repository: rathena/user-guides
       branch: master
+      token: !!python/object/apply:os.getenv ["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"]
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - git-revision-date-localized:
