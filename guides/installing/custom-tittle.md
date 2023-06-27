@@ -112,4 +112,7 @@ prontera,155,179,5	script	FroggoNPC	810,{
 ## Extra Information
 
 !!! info "You can create a Title without creating an Achievement"
-	But you won't see it in the title window, for instance, the player can't equip it by normal means, unless you create and complete the achievement that rewards you with the title, otherwise you'll have to find another way to use and apply the title, such as SQL or custom SRC code.
+	But you won't see it in the title window[^2], for instance, the player can't equip it by normal means, unless you create and complete the achievement that rewards you with the title, otherwise you'll have to find another way to use and apply the title, such as SQL or custom SRC code.
+
+
+[^2]: [Titles are bound to Achievements](https://discord.com/channels/96459614895226880/352836475982839808/1120203326450040894)
