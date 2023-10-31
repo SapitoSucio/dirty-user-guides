@@ -5,6 +5,10 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rathena/user-guides/deploy_guides.yml?label=automatic%20building&style=for-the-badge)](https://github.com/rathena/user-guides/actions) 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/rathena/user-guides?label=Open%20PR&style=for-the-badge)
 
+<span style="color:white;font-weight:700;font-size:22px"> 
+This is a clone of the official repo but including some guides that aren't allowed there for reasons
+</span>
+
 # Hello~! What?!
 
 Welcome to User Guides, the community driven guidebook for rAthena. This is a place where you can find guides on how to install, configure, and use rAthena. If you have any questions, feel free to ask in the [rAthena Forums](https://rathena.org/board/) or our [Discord](https://discord.gg/kMeMXWEvSV) server.
