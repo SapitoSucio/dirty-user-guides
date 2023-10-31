@@ -31,7 +31,7 @@ nav:
       - Contribute: CONTRIBUTING.md
       - Tools 🐸:
         - Login Background Generator: https://sapitosucio.github.io/FroggoCutter/
-        - rAthena Bitmask Calculator: https://sapitosucio.github.io/ROBitmaskCalculator/
+        - rAthena Bitmask Calculator[WIP]: https://sapitosucio.github.io/ROBitmaskCalculator/
 theme:
   icon:
     repo: fontawesome/brands/github-alt 
