@@ -5,7 +5,7 @@ In this tutorial I'll show you how to add a custom NPC sprite to your RO server.
 This is the sprite I am going to add.
 
 <figure markdown>
-  ![NPC Custom Sample](https://i.imgur.com/0wWj5eH.png)
+  ![NPC Custom Sample](https://i.imgur.com/QD3mJzs.png)
   <figcaption>NPC Custom Goku</figcaption>
 </figure>
 
