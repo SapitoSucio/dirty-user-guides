@@ -96,7 +96,7 @@ prontera,155,179,5	script	FroggoNPC	Goku,{
 ```
 
 <figure markdown>
-  ![NPC Custom Sample](https://images.weserv.nl/?url=https://i.imgur.com/HPxAEO8.png?v=4&h=150&w=150&fit=cover&mask=circle&maxage=7d)
+  ![NPC Custom Sample](https://images.weserv.nl/?url=https://i.imgur.com/HPxAEO8.png?v=4&h=150&w=150&fit=cover&mask=circle&maxage=7d&l=6)
   <figcaption>NPC Custom Goku</figcaption>
 </figure>
 

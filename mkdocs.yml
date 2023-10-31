@@ -1,7 +1,7 @@
-site_name: rAthena User Guides
+site_name: Dirty rAthena User Guides 🐸
 site_url: https://rathena.github.io/user-guides/
 repo_url: https://github.com/rathena/user-guides/
-repo_name: rathena/user-guides
+repo_name: sapitosucio/dirty-user-guides
 site_description: User Guides created by the rAthena community. These guides are generated from a Github repository and turned into an easy to use website.
 site_author: rAthena Developement Team
 copyright: Copyright &copy; rAthena Development Team, 2011 - 2023
@@ -29,6 +29,9 @@ nav:
       - Wiki: https://rathena.org/wiki/
       - Discord: https://discord.gg/kMeMXWEvSV
       - Contribute: CONTRIBUTING.md
+      - Tools 🐸:
+        - Login Background Generator: https://sapitosucio.github.io/FroggoCutter/
+        - rAthena Bitmask Calculator: https://sapitosucio.github.io/ROBitmaskCalculator/
 theme:
   icon:
     repo: fontawesome/brands/github-alt 
@@ -63,14 +66,14 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: custom
-      accent: cyan
+      primary: teal
+      accent: green
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: custom
-      accent: cyan
+      primary: teal
+      accent: light green
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -142,6 +145,7 @@ plugins:
           - index.md
       enabled: true
       strict: true
+  - tags
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
