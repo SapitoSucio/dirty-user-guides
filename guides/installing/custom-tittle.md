@@ -1,5 +1,5 @@
 <figure markdown>
-  ![In-Game Title Sample](https://i.imgur.com/VDyQ5Ox.png)
+  ![In-Game Title Sample](https://images.weserv.nl/?url=https://i.imgur.com/VDyQ5Ox.png?v=4&fit=cover&mask=hexagon&maxage=7d)
   <figcaption>Ragnarok Title System</figcaption>
 </figure>
 
