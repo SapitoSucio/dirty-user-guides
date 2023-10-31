@@ -55,7 +55,7 @@ That's all for the server-side.
 
 ### Client Side
 
-This guide assumes that you have enabled the Custom Lua Support patch[^1] with either WARP or Nemo.
+This guide assumes that you have enabled the `Custom Lua Support` patch[^1] with either WARP or Nemo.
 
 In your `Data Folder/GRF` go to `luafiles514\lua files\cls` and open `jobname.lub` and append your custom NPC like this:
 

@@ -37,7 +37,7 @@ enum e_title_table : uint16 {
 
 ### Client Side
 
-On your `Data Folder`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and append your custom title like this: 
+On your `Data Folder/GRF`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and append your custom title like this: 
 
 ```lua hl_lines="8" title="data\luafiles514\lua files\datainfo\titletable.lub"
 title_tbl = {
@@ -98,7 +98,7 @@ Here we will declare a new achievement with an ID of `250000`
 ## NPC Code
 
 You can use this NPC Script to give yourself the achievement.
-You have to put the AchievementID you declared previously in the `achievement_list_EN.lub` file
+You have to put the `AchievementID` you declared previously in the `achievement_list_EN.lub` file
 
 ```cpp
 prontera,155,179,5	script	FroggoNPC	810,{
