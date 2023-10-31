@@ -1,8 +1,8 @@
 # How to add a custom NPC Sprite
 
-In this tutorial, I'm gonna show you how to add a custom NPC Sprite to your RO Server.
+In this tutorial I'll show you how to add a custom NPC sprite to your RO server.
 
-This is the sprite I will be adding.
+This is the sprite I am going to add.
 
 <figure markdown>
   ![NPC Custom Sample](https://i.imgur.com/0wWj5eH.png)
@@ -11,10 +11,10 @@ This is the sprite I will be adding.
 
 ## Requirements
 
-- A custom NPC Sprite
+- A custom NPC sprite
 - Any text editor
 
-You'll need to modify both client and server side.
+You'll need to modify both the client and server sides.
 
 ## Modifications
 
@@ -27,7 +27,7 @@ On `src/map/npc.hpp`, search for
  NPC_RANGE3_END, // Official: JT_NEW_NPC_3RD_END=19999
 ```
 
-Add your custom entry above `NPC_RANGE3_END`, you need to assign an unused ID to it, in this case I'll put `JT_GOKU = 30000`
+Add your custom entry above `NPC_RANGE3_END`, you need to assign an unused ID to it, in this case I'll put `JT_GOKU = 30000`.
 
 ```cpp hl_lines="3-4"
  JT_NEW_NPC_3RD_END = 19999,
@@ -38,9 +38,9 @@ Add your custom entry above `NPC_RANGE3_END`, you need to assign an unused ID to
  NPC_RANGE3_END, // Official: JT_NEW_NPC_3RD_END=19999
 ```
 
-Now we open up `src/map/script_constants.hpp` and search for the line `export_constant_npc(JT_NEW_NPC_3RD_END);`
+Now we open `src/map/script_constants.hpp` and look for the line `export_constant_npc(JT_NEW_NPC_3RD_END);`.
 
-Below it you will add your custom entry, like this:
+Add your custom entry below it, like this
 
 ```cpp hl_lines="3"
  export_constant_npc(JT_ROZ_MQ_SKULD);
@@ -55,9 +55,9 @@ That's all for the server-side.
 
 ### Client Side
 
-This guide will be considering you have activated the patch "Custom Lua Support"[^1] with either WARP or Nemo.
+This guide assumes that you have enabled the Custom Lua Support patch[^1] with either WARP or Nemo.
 
-On your `Data Folder`, go to `luafiles514\lua files\cls` and open up `jobname.lub` and append your custom NPC like this:
+In your `Data Folder/GRF` go to `luafiles514\lua files\cls` and open `jobname.lub` and append your custom NPC like this:
 
 ```lua hl_lines="3" title="data\luafiles514\lua files\cls\jobname.lub"
 JobNameTable_CLS = {
@@ -66,11 +66,11 @@ JobNameTable_CLS = {
 }
 ```
 
-With the previous example, we are telling the client that the NPC `JT_GOKU` uses the file `Goku.spr`
+In the previous example, we tell the client that the NPC `JT_GOKU` uses the file `Goku.spr`.
 
-Then, on the same folder `luafiles514\lua files\cls`, open up `npcidentity.lub` file.
+Then, in the same folder `luafiles514\lua files\cls`, open the file `npcidentity.lub`.
 
-Here we will declare the NPC ID, the same ID we used wrote on `src/map/npc.hpp`, which in this case is `30000`
+Here we declare the NPC ID, the same ID we wrote in `src/map/npc.hpp`, which in this case is `30000`.
 
 ```lua hl_lines="6" title="data\luafiles514\lua files\cls\npcidentity.lub"
 jobtbl_CLS = {
@@ -100,8 +100,8 @@ prontera,155,179,5	script	FroggoNPC	Goku,{
   <figcaption>NPC Custom Goku</figcaption>
 </figure>
 
-??? warning "Remember to place both .act and .spr files on the path `data\sprite\¸ó½ºÅÍ`"
-	In this case, the client will be looking for Goku.act and Goku.spr files
+??? warning "Remember to put both .act and .spr files in the path `data\sprite\¸ó½ºÅÍ`"
+	In this case, the client will search for Goku.act and Goku.spr files.
 
 ## Extra
 
