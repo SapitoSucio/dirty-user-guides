@@ -11,6 +11,7 @@ site_dir: _site/
 nav:
     - Guides Home: index.md
     - Installing rAthena:
+      - MariaDB/MySQL: MySQL.md
       - General: installing.md
       - Debian: installing/debian.md
       - Docker: installing/docker.md
@@ -51,7 +52,7 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.instant
-    - header.autohide
+    #- header.autohide
     # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top

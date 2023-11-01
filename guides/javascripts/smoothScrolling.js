@@ -6,7 +6,7 @@ for (let item of anchorlinks) { //
     item.addEventListener('click', (e) => {
         let hashval = item.getAttribute('href')
         let target = document.querySelector(hashval)
-        target.style.paddingTop = '75px'; // To compensate navigation bar height
+        target.style.paddingTop = '0px'; // To compensate navigation bar height
         target.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
@@ -18,7 +18,9 @@ for (let item of anchorlinks) { //
 }
 
 
-$( '.contributors img[data-src]' ).each( function() {
-	src = $(this).attr("data-src");
-	$(this).attr('src',src);
-});
+// $( '.contributors img[data-src]' ).each( function() {
+// 	src = $(this).attr("data-src");
+// 	$(this).attr('src',src);
+// });
+
+
