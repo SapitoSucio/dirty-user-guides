@@ -1,10 +1,12 @@
+# MariaDB/MySQL
+
 rAthena supports both MariaDB and MySQL, and the selection between these two database systems depends on various factors. While both databases are compatible with rAthena, differences exist that should be considered:
 
 | Feature                   | MariaDB                              | MySQL                                |
 |---------------------------|--------------------------------------|---------------------------------------|
 | **Compatibility with rAthena** | Compatible                         | Compatible                            |
 | **Performance**            | Generally faster, especially on complex queries; Additional storage engines (Aria, TokuDB, MyRocks) may provide advantages | Good performance; Performance may vary with storage engines and configurations |
-| **Licensing**              | GPL with MariaDB License            | GPL (Open Source)                     |
+| **Licensing**              | GPL v2            | GPL v2                    |
 | **Replication**            | Galera Cluster for synchronous multi-master replication | MySQL Replication with semi-synchronous and asynchronous options |
 | **Community & Support**    | Community-driven, with enterprise support from MariaDB Corporation | Developed by MySQL AB (now Oracle) with enterprise support available |
 
@@ -14,11 +16,9 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 
 === "MariaDB"
 	<br>
-	# Installing MariaDB on Windows
+	<h1>Installing MariaDB on Windows</h1> 
 
-	MariaDB is a popular open-source relational database management system. Follow the steps below to install MariaDB on Windows.
-
-	## Step 1: Download the MariaDB Installer
+	<h2>Step 1: Download the MariaDB Installer</h2>
 
 	1. Visit the official MariaDB website at [https://mariadb.org/](https://mariadb.org/) and navigate to the "Downloads" section.
 	2. Choose the appropriate version of MariaDB for Windows and click on the download link to start the download.
@@ -28,7 +28,7 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 	<figcaption>MariaDB Download Page</figcaption>
 	</figure>
 
-	## Step 2: Run MariaDB Installer
+	<h2>Step 2: Run MariaDB Installer</h2>
 
 	3. Once the installer is downloaded, locate the file and double-click on it to run the installer.
 	4. You may be prompted by Windows to confirm the installation. Click "Yes" to proceed.
@@ -41,7 +41,7 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 	<figcaption>MariaDB Installer</figcaption>
 	</figure>
 
-	## Step 3: Change User Settings
+	<h2>Step 3: Change User Settings</h2>
 
 	8. Tick the "Modify password for the database user "root" and change the password.
 	9. Click "Next" to continue.
@@ -51,7 +51,7 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 	<figcaption>Change User Settings</figcaption>
 	</figure>
 
-	## Step 4: Database Settings
+	<h2>Step 4: Database Settings</h2>
 
 	10. You can configure other options like the service name and port number if desired.
 	11. Click on "Next" to continue.
@@ -61,7 +61,7 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 	<figcaption>Database Settings</figcaption>
 	</figure>
 
-	## Step 5: Ready to Install
+	<h2>Step 5: Ready to Install</h2>
 
 	12. Reached this point, the installation will start.
 
@@ -70,12 +70,12 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 	<figcaption>Ready to Install</figcaption>
 	</figure>
 
-	## Step 6: Complete the Installation
+	<h2>Step 6: Complete the Installation</h2>
 
 	13. Once the installation is complete, you will see a "Installation Complete" message.
 	14. Click "Finish" to exit the installer.
 
-	## Step 8: Verify the Installation
+	<h2>Step 8: Verify the Installation</h2>
 
 	15. Search for Mysql Client and run it.
 	16. You will be prompted to enter the root password you set during the installation.
@@ -88,10 +88,10 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 
 	Congratulations! You have successfully installed MariaDB on Windows. You can now start using MariaDB as your relational database management system.
 
-	## Additional Notes
+	<h2>Additional Notes</h2>
 
 	- You can find documentation and resources for using MariaDB on the official MariaDB website.
 	- Remember to secure your MariaDB installation by creating user accounts with appropriate privileges and configuring suitable security measures.
 === "MySQL"
 	<br>
-	# Installing MySQL on Windows
+	<h1>Installing MySQL on Windows</h1>
