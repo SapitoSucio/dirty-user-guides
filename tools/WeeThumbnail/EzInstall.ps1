@@ -1,6 +1,6 @@
 # Check if running as administrator
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-
+	Clear-Host
     1..6 | ForEach-Object { Write-Host "This script needs to be run as administrator." }
     Write-Host "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     Read-Host "Press Enter to exit..."
@@ -63,13 +63,13 @@ function Uninstall-WeeThumbnail {
 	Clear-Host
     $dllUrl = 'https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll'
     $dllPath = Join-Path $env:TEMP 'WeeThumbnail.dll'
-    $processInfo = Start-Process -FilePath regsvr32.exe -ArgumentList "/u `"$dllPath`"" -Wait -PassThru
+    $processInfo = Start-Process -FilePath regsvr32.exe -ArgumentList "/u `"$dllPath`"" -Wait -PassThru 
     $exitCode = $processInfo.ExitCode
     
     if ($exitCode -eq 0) {
         Write-Host "DLL uninstalled successfully."
     } elseif ($exitCode -eq 5) {
-        Write-Host "The DLL wasn't installed."
+        Write-Host "The DLL is not registered."
     } else {
         Write-Host "Error uninstalling the DLL. Exit code: $exitCode"
     }
