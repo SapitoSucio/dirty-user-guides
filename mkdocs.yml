@@ -31,6 +31,7 @@ nav:
       - Discord: https://discord.gg/kMeMXWEvSV
       - Contribute: CONTRIBUTING.md
       - Tools 🐸:
+        - WeeThumbnail: WeeThumbnail.md
         - Login Background Generator: https://sapitosucio.github.io/FroggoCutter/
         - rAthena Bitmask Calculator[WIP]: https://sapitosucio.github.io/ROBitmaskCalculator/
 theme:
