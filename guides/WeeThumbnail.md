@@ -11,7 +11,7 @@ It was created by Shinryo
 
 ## Installation
 
-There are several way to install WeeThumbnail
+There are several ways to install WeeThumbnail
 
 ### The Fastest
 
