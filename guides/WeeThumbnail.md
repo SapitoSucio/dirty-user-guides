@@ -27,6 +27,7 @@ You can (and should) check the code [here](https://raw.githubusercontent.com/Sap
 - You have to download two files, `StartMe.bat` and `WeeThumbnail.dll`, place them in the same folder and run the `StartMe.bat` with elevated privileges.
 
 #### Download - Right Click and Save link as
+
  - [StartMe.bat](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/StartMe.bat)
  - [WeeThumbnail.dll](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll)
 
