@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # What's WSL
 
 Windows Subsystem for Linux (WSL) is a compatibility layer for running Linux binary executables natively on Windows. The latest version of WSL is WSL2, which uses a real Linux kernel to provide faster performance and improved compatibility.

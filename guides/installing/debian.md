@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 This guide covers how to install rAthena on Debian 10. For earlier versions of Debian you may need to alter the list of required packages. Older versions will not be covered in this guide.
 
 Code that you should run in your console/SSH application is `written like this`.

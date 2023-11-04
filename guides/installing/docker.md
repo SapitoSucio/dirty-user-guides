@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 This guide covers how to quickly get rAthena running on any OS by using Docker. In depth docker topics will not be covered by this guide.
 
 Code that you should run in your console/SSH application is `written like this`.

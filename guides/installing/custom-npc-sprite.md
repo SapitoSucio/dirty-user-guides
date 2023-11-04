@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # How to add a custom NPC Sprite
 
 In this tutorial I'll show you how to add a custom NPC sprite to your RO server.

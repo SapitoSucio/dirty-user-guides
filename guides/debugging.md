@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 Did you ever see yourself placing `ShowDebug` everywhere in the code with comments like `Been here`, `If ok` and etc, just for trying to understand why your new groundbreaking feature isn't working correctly? The solution is called breakpoints.
 
 ## What is debugging?

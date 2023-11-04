@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # MariaDB/MySQL
 
 rAthena supports both MariaDB and MySQL, and the selection between these two database systems depends on various factors. While both databases are compatible with rAthena, differences exist that should be considered:
