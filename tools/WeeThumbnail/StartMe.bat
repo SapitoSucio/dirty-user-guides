@@ -1,3 +1,6 @@
+REM Script created by: Sapito Sucio
+REM Description: This batch file allows you to install or uninstall WeeThumbnail.dll.
+
 @echo off
 
 REM Check if running as administrator

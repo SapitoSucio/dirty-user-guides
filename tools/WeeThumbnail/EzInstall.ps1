@@ -1,3 +1,8 @@
+<#
+Script created by: Sapito Sucio
+Description: This script allows you to install or uninstall WeeThumbnail.dll.
+#>
+
 # Check if running as administrator
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
 	Clear-Host
