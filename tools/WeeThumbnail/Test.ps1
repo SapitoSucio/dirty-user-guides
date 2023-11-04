@@ -45,11 +45,12 @@ function Install-WeeThumbnail {
     $dllPath = Download-WeeThumbnailDll
     $result = regsvr32.exe /i "$dllPath"
     
-    if ($result -eq 0) {
-        Write-Host "DLL installed successfully."
-    } else {
-        Write-Host "Error installing the DLL."
-    }
+    if ($result -match "succeeded") {
+		Write-Host "DLL installed successfully."
+	} else {
+		Write-Host "Error installing the DLL."
+	}
+
 
     Read-Host "Press Enter to continue..."
     Show-Menu
@@ -59,11 +60,11 @@ function Uninstall-WeeThumbnail {
     $dllPath = Join-Path $env:TEMP 'WeeThumbnail.dll'
     $result = regsvr32.exe /u "$dllPath"
     
-    if ($result -eq 0) {
-        Write-Host "DLL uninstalled successfully."
-    } else {
-        Write-Host "Error uninstalling the DLL."
-    }
+    if ($result -match "succeeded") {
+		Write-Host "DLL uninstalled successfully."
+	} else {
+		Write-Host "Error uninstalling the DLL."
+	}
 
     Read-Host "Press Enter to continue..."
     Show-Menu
