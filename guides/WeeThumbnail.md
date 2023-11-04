@@ -1,6 +1,6 @@
 <figure markdown>
   ![WeeThumbnail in action](https://images.weserv.nl/?url=https://i.imgur.com/QMzkGkp.png?v=4&default=https://i.imgur.com/QMzkGkp.png&maxage=7d&l=9)
-  <figcaption>WeeThumbnail in action - Win 11</figcaption>
+  <figcaption>WeeThumbnail in Win 11 - </figcaption>
 </figure>
 
 # WeeWhat?
