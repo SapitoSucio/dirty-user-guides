@@ -24,7 +24,7 @@ You can (and should) check the code [here](https://raw.githubusercontent.com/Sap
 
 ### Fast
 
-- You have to download two files, StartMe.bat file and the WeeThumbnail.dll, place them in the same folder and run the StartMe.bat with elevated privileges.
+- You have to download two files, `StartMe.bat` and `WeeThumbnail.dll`, place them in the same folder and run the `StartMe.bat` with elevated privileges.
 
 #### Download - Right Click and Save link as
  - [StartMe.bat](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/StartMe.bat)
@@ -36,7 +36,7 @@ You can (and should) check the code [here](https://raw.githubusercontent.com/Sap
 
 #### Install
 
-- Download [WeeThumbnail.dll](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll), open an elevated command prompt and be sure you're on the same folder as the WeeThumbnail.dll and type the following command:
+- Download [WeeThumbnail.dll](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll), open an elevated command prompt and be sure you're on the same folder as the `WeeThumbnail.dll` and type the following command:
 
 ```powershell
 regsvr32.exe /i "WeeThumbnail.dll"
@@ -44,8 +44,10 @@ regsvr32.exe /i "WeeThumbnail.dll"
 
 #### Uninstall
 
-- Download [WeeThumbnail.dll](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll), open an elevated command prompt and be sure you're on the same folder as the WeeThumbnail.dll and type the following command:
+- Download [WeeThumbnail.dll](https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll), open an elevated command prompt and be sure you're on the same folder as the `WeeThumbnail.dll` and type the following command:
 
 ```powershell
 regsvr32.exe /u "WeeThumbnail.dll"
 ```
+
+!!! info "Your browser may flag WeeThumbnail.dll as dangerous, just as it flags every other .DLL or .BAT file"
