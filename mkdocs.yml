@@ -138,7 +138,7 @@ plugins:
   - git-committers:
       repository: sapitosucio/dirty-user-guides
       branch: master
-      #token: !ENV [MKDOCS_GIT_COMMITTERS_APIKEY, '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']
+      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - git-revision-date-localized:
       type: timeago
       custom_format: "%d. %B %Y"
