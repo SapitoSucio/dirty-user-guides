@@ -3,12 +3,19 @@
 {% block content %}
   {{ super() }}
 
-  {% if git_page_authors %}
-    <div class="md-source-date">
-      <small>
-          Authors: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
-      </small>
-    </div>
+  	{% if git_page_authors %}
+		<div class="md-source-date">
+		<small>
+			Authors: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
+		</small>
+		</div>
+	{% endif %}
+	<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+		<li class="last-updated-holder displayDate loading">
+		  <span class="last-updated-text">Last updated:</span>
+		  <time role="presentation" datetime="2018-10-25T00:00:00.000Z" data-article-date-source="ms.date">{% if last_commit_date %}{{ last_commit_date }}{% endif %}</time>
+		</li>
+	  </ul>
 	<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
 		<li class="contributors-holder">
 		  <span class="contributors-text">Contributors</span>
@@ -19,5 +26,4 @@
 		  </ul>
 		</li>
 	  </ul>
-  {% endif %}
 {% endblock %}
