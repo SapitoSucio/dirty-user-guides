@@ -1,5 +1,6 @@
 # Check if running as administrator
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+
     1..6 | ForEach-Object { Write-Host "This script needs to be run as administrator." }
     Write-Host "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     Read-Host "Press Enter to exit..."
@@ -32,8 +33,16 @@ function Show-Menu {
     }
 }
 
+# We download WeeThumbnail.dll
+function Download-WeeThumbnailDll {
+    $dllUrl = 'https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll'
+    $downloadPath = Join-Path $PSScriptRoot 'WeeThumbnail.dll'
+    Invoke-WebRequest -Uri $dllUrl -OutFile $downloadPath
+    return $downloadPath
+}
+
 function Install-WeeThumbnail {
-    $dllPath = Join-Path $PSScriptRoot "WeeThumbnail.dll"
+    $dllPath = Download-WeeThumbnailDll
     $result = regsvr32.exe /i "$dllPath"
     
     if ($result -eq 0) {
@@ -45,7 +54,6 @@ function Install-WeeThumbnail {
     Read-Host "Press Enter to continue..."
     Show-Menu
 }
-
 function Uninstall-WeeThumbnail {
     $dllPath = Join-Path $PSScriptRoot "WeeThumbnail.dll"
     $result = regsvr32.exe /u "$dllPath"
