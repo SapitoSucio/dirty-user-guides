@@ -136,7 +136,7 @@ plugins:
   - git-committers:
       repository: sapitosucio/dirty-user-guides
       branch: master
-      token: !!python/object/apply:os.getenv ["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"]
+      token: !ENV ["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"]
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - git-revision-date-localized:
