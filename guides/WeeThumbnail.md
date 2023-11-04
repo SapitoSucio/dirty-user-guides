@@ -1,13 +1,14 @@
-<figure markdown>
-  ![WeeThumbnail in action](https://images.weserv.nl/?url=https://i.imgur.com/QMzkGkp.png?v=4&default=https://i.imgur.com/QMzkGkp.png&maxage=7d&l=9)
-  <figcaption>WeeThumbnail in Win 11</figcaption>
-</figure>
 
-# WeeWhat?
+## WeeWhat?
 
 “WeeThumbnail” is a DLL that is part of the WeeTools. It allows Windows to preview .spr files directly in Windows Explorer.
 
 It was created by Shinryo.
+
+<figure markdown>
+  ![WeeThumbnail in action](https://images.weserv.nl/?url=https://i.imgur.com/QMzkGkp.png?v=4&default=https://i.imgur.com/QMzkGkp.png&maxage=7d&l=9)
+  <figcaption>WeeThumbnail in Win 11</figcaption>
+</figure>
 
 ## Installation
 
