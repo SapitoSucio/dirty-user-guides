@@ -82,7 +82,7 @@ You can choose either MariaDB or MySQL based on your specific requirements, perf
 	17. If the command-line client opens without any errors, it indicates that MariaDB is successfully installed on your Windows system.
 
 	<figure markdown>
-	![MariaDB Installer](https://images.weserv.nl/?url=https://i.imgur.com/p9UtjYi.png?v=4&&maxage=7d&l=6)
+	![MariaDB Installer](https://images.weserv.nl/?url=https://i.imgur.com/p9UtjYi.png?v=4&maxage=7d&l=6)
 	<figcaption>Run Mysql Client</figcaption>
 	</figure>
 

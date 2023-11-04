@@ -5,7 +5,7 @@ In this tutorial I'll show you how to add a custom NPC sprite to your RO server.
 This is the sprite I am going to add.
 
 <figure markdown>
-  ![NPC Custom Sample](https://i.imgur.com/akvTnQh.png)
+  ![NPC Custom Sample](https://images.weserv.nl/?url=https://i.imgur.com/akvTnQh.png?v=4&default=https://i.imgur.com/akvTnQh.png&maxage=7d&l=9)
   <figcaption>NPC Custom Goku</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ prontera,155,179,5	script	FroggoNPC	Goku,{
 ```
 
 <figure markdown>
-  ![NPC Custom Sample](https://images.weserv.nl/?url=https://i.imgur.com/HPxAEO8.png?v=4&h=150&w=150&fit=cover&mask=circle&maxage=7d&l=6)
+  ![NPC Custom Sample](https://images.weserv.nl/?url=https://i.imgur.com/HPxAEO8.png?v=4&default=https://i.imgur.com/HPxAEO8.png&h=150&w=150&fit=cover&mask=circle&maxage=7d&l=9)
   <figcaption>NPC Custom Goku</figcaption>
 </figure>
 
