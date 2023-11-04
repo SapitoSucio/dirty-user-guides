@@ -126,6 +126,8 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   # - git-authors:
   #         sort_authors_by: contribution
   #         show_contribution: true
@@ -136,9 +138,7 @@ plugins:
   - git-committers:
       repository: sapitosucio/dirty-user-guides
       branch: master
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
-  - search:
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      token: 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
   - git-revision-date-localized:
       type: timeago
       custom_format: "%d. %B %Y"
