@@ -36,7 +36,7 @@ function Show-Menu {
 # We download WeeThumbnail.dll
 function Download-WeeThumbnailDll {
     $dllUrl = 'https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll'
-    $downloadPath = Join-Path $PSScriptRoot 'WeeThumbnail.dll'
+    $downloadPath = Join-Path $env:TEMP 'WeeThumbnail.dll'
     Invoke-WebRequest -Uri $dllUrl -OutFile $downloadPath
     return $downloadPath
 }
