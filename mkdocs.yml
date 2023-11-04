@@ -138,7 +138,7 @@ plugins:
   - git-committers:
       repository: sapitosucio/dirty-user-guides
       branch: master
-      token: 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
+      #token: !ENV [MKDOCS_GIT_COMMITTERS_APIKEY, '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']
   - git-revision-date-localized:
       type: timeago
       custom_format: "%d. %B %Y"
