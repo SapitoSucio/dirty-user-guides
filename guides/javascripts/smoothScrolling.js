@@ -17,10 +17,8 @@ for (let item of anchorlinks) { //
     })
 }
 
-
-// $( '.contributors img[data-src]' ).each( function() {
-// 	src = $(this).attr("data-src");
-// 	$(this).attr('src',src);
-// });
-
-
+// Avatar de Contribuyentes
+$( '.contributors img[data-src]' ).each( function() {
+	src = $(this).attr("data-src");
+	$(this).attr('src',src);
+});

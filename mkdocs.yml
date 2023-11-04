@@ -126,16 +126,17 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
-  - git-authors:
-          sort_authors_by: contribution
-          show_email_address: false
-          authorship_threshold_percent: 10
-          exclude:
-              - index.md
+  # - git-authors:
+  #         sort_authors_by: contribution
+  #         show_contribution: true
+  #         show_email_address: false
+  #         authorship_threshold_percent: 10
+  #         exclude:
+  #             - index.md
   - git-committers:
-      repository: rathena/user-guides
+      repository: sapitosucio/dirty-user-guides
       branch: master
-      token: !!python/object/apply:os.getenv ["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"]
+      token: !!python/object/apply:os.getenv ["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"]
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - git-revision-date-localized:
