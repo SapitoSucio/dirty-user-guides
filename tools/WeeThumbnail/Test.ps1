@@ -55,7 +55,8 @@ function Install-WeeThumbnail {
     Show-Menu
 }
 function Uninstall-WeeThumbnail {
-    $dllPath = Join-Path $PSScriptRoot "WeeThumbnail.dll"
+    $dllUrl = 'https://raw.githubusercontent.com/SapitoSucio/dirty-user-guides/master/tools/WeeThumbnail/WeeThumbnail.dll'
+    $dllPath = Join-Path $env:TEMP 'WeeThumbnail.dll'
     $result = regsvr32.exe /u "$dllPath"
     
     if ($result -eq 0) {
