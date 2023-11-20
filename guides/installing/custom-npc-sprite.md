@@ -104,7 +104,7 @@ prontera,155,179,5	script	FroggoNPC	Goku,{
   <figcaption>NPC Custom Goku</figcaption>
 </figure>
 
-??? warning "Remember to put both .act and .spr files in the path `data\sprite\¸ó½ºÅÍ`"
+??? warning "Remember to put both .act and .spr files in the `data\sprite\¸ó½ºÅÍ` path"
 	In this case, the client will search for Goku.act and Goku.spr files.
 
 ## Extra
