@@ -128,17 +128,17 @@ markdown_extensions:
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  # - git-authors:
-  #         sort_authors_by: contribution
-  #         show_contribution: true
-  #         show_email_address: false
-  #         authorship_threshold_percent: 10
-  #         exclude:
-  #             - index.md
-  - git-committers:
-      repository: sapitosucio/dirty-user-guides
-      branch: master
-      token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
+  - git-authors:
+          sort_authors_by: contribution
+          show_contribution: true
+          show_email_address: false
+          authorship_threshold_percent: 10
+          exclude:
+              - index.md
+  # - git-committers:
+  #     repository: sapitosucio/dirty-user-guides
+  #     branch: master
+  #     token: !!python/object/apply:os.getenv ["MKDOCS_GIT_COMMITTERS_APIKEY"]
   - git-revision-date-localized:
       type: timeago
       custom_format: "%d. %B %Y"
