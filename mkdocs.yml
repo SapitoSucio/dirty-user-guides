@@ -24,16 +24,16 @@ nav:
         - Custom Title: installing/custom-tittle.md
     - MSVS Debugging: debugging.md
     - Extensions: extensions.md
-    - Links:
+    - Tools 🐸:
+      - WeeThumbnail: WeeThumbnail.md
+      - Login Background Generator: https://sapitosucio.github.io/FroggoCutter/
+      - rAthena Bitmask Calculator[WIP]: https://sapitosucio.github.io/ROBitmaskCalculator/
+    - Important Links:
       - Github: https://github.com/rathena/
       - Forums: https://rathena.org/board/
       - Wiki: https://rathena.org/wiki/
       - Discord: https://discord.gg/kMeMXWEvSV
       - Contribute: CONTRIBUTING.md
-      - Tools 🐸:
-        - WeeThumbnail: WeeThumbnail.md
-        - Login Background Generator: https://sapitosucio.github.io/FroggoCutter/
-        - rAthena Bitmask Calculator[WIP]: https://sapitosucio.github.io/ROBitmaskCalculator/
 theme:
   icon:
     repo: fontawesome/brands/github-alt 
