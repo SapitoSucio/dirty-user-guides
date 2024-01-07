@@ -20,8 +20,8 @@ nav:
   # - MySQL Tables: mysql-tables.md
     - Modifications:
       - Client & Server Side:
-        - Custom NPC Sprite: installing/custom-npc-sprite.md
-        - Custom Title: installing/custom-tittle.md
+        - Custom NPC Sprite: Mods/Both/custom-npc-sprite.md
+        - Custom Title: Mods/Both/custom-tittle.md
     - MSVS Debugging: debugging.md
     - Extensions: extensions.md
     - Tools 🐸:
