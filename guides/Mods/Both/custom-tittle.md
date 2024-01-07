@@ -39,6 +39,25 @@ enum e_title_table : uint16 {
 };
 ```
 
+Lastly, you'll need to add the achievement which will be rewarding your custom title, on `db/import/achievement_db.yml`, add your achievement entry, like this:
+
+```yaml hl_lines="6-14"
+Header:
+  Type: ACHIEVEMENT_DB
+  Version: 2
+
+Body:
+  - Id: 250000
+    Group: Goal_Achieve
+    Name: Welcome to Froggy RO
+    Condition: " AchievementLevel >= 0 "
+    Rewards:
+      Item: Gift_Box
+      Script: " specialeffect2 EF_INCAGILITY; sc_start SC_INCREASEAGI,30000,10; "
+      TitleId: 1500
+    Score: 10
+```
+You have finished source side editing, by this point you must **recompile** your emulator.
 ### Client Side
 
 On your `Data Folder/GRF`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and append your custom title like this: 
