@@ -39,9 +39,9 @@ enum e_title_table : uint16 {
 };
 ```
 
-Lastly, you'll need to add the achievement which will be rewarding your custom title, on `db/import/achievement_db.yml`, add your achievement entry, like this:
+Lastly, you'll need to add the achievement which will be rewarding your custom title, on `#!css db/import/achievement_db.yml`, add your achievement entry, like this:
 
-```yaml hl_lines="6-14"
+```yaml hl_lines="6-10"
 Header:
   Type: ACHIEVEMENT_DB
   Version: 2
@@ -49,18 +49,14 @@ Header:
 Body:
   - Id: 250000
     Group: Goal_Achieve
-    Name: Welcome to Froggy RO
-    Condition: " AchievementLevel >= 0 "
+    Name: Froggy Achievement
     Rewards:
-      Item: Gift_Box
-      Script: " specialeffect2 EF_INCAGILITY; sc_start SC_INCREASEAGI,30000,10; "
       TitleId: 1500
-    Score: 10
 ```
 You have finished source side editing, by this point you must **recompile** your emulator.
 ### Client Side
 
-On your `Data Folder/GRF`, go to `luafiles514\lua files\datainfo` and open up `titletable.lub` and append your custom title like this: 
+On your `#!css Data Folder/GRF`, go to `#!css luafiles514\lua files\datainfo` and open up `#!css titletable.lub` and append your custom title like this: 
 
 ```lua hl_lines="8" title="data\luafiles514\lua files\datainfo\titletable.lub"
 title_tbl = {
@@ -77,9 +73,9 @@ title_tbl = {
 ??? info "Remember; TitleID it's one thing and AchievementID it's another thing..."
 	Here we declared our custom title with an ID of `1500`, previously we declared the AchievementID of `250000`, which will reward this `Froggy Testeru` title
 
-On your `System Folder`, open up `achievement_list_EN.lub` file.
+On your `#!css System Folder`, open up `#!css achievement_list_EN.lub` file.
 
-Here we will declare a new achievement with an ID of `250000`
+Here we will declare a new achievement with an ID of `#!css 250000`
 
 ```lua hl_lines="15-30" title="System\achievement_list_EN.lub"
 [240020] = {
