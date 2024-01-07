@@ -3,6 +3,7 @@ Script created by: Sapito Sucio
 Description: This script allows you to install or uninstall WeeThumbnail.dll.
 #>
 
+
 # Check if running as administrator
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
 	Clear-Host
@@ -14,10 +15,10 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 
 function Show-Menu {
     Clear-Host
-    Write-Host "Menu:"
-    Write-Host "1) Install WeeThumbnail"
-    Write-Host "2) Uninstall WeeThumbnail"
-    Write-Host "3) Exit"
+    Write-Host "Menu:" -ForegroundColor Green
+    Write-Host "1) Install WeeThumbnail" 
+    Write-Host "2) Uninstall WeeThumbnail" 
+    Write-Host "3) Exit" 
     $choice = Read-Host "Select an option"
 
     switch ($choice) {
@@ -31,12 +32,13 @@ function Show-Menu {
             exit
         }
         default {
-            Write-Host "Invalid option. Please try again."
+            Write-Host "Invalid option. Please try again." -ForegroundColor Red
             Start-Sleep -Seconds 2
             Show-Menu
         }
     }
 }
+
 
 # We download WeeThumbnail.dll
 function Download-WeeThumbnailDll {
