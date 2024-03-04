@@ -5,6 +5,8 @@ You can follow the tutorial with [this video on Youtube](https://www.youtube.com
 
 ### Install Chocolatey
 
+Open a powershell window with admin rights and execute this command;
+
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
@@ -161,7 +163,6 @@ map_server_id: rathenadbusr
 map_server_pw: froggopass
 map_server_db: rathenadb
 
-// MySQL Web Server
 web_server_id: rathenadbusr
 web_server_pw: froggopass
 web_server_db: rathenadb
