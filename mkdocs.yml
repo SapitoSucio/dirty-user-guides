@@ -13,6 +13,7 @@ nav:
     - Installing rAthena:
       - MariaDB/MySQL: MySQL.md
       - General: installing.md
+      - Windows: installing/windows.md
       - Debian: installing/debian.md
       - Docker: installing/docker.md
       - WSL: installing/WSL.md
