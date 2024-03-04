@@ -1,7 +1,7 @@
 
 In this tutorial we are going to use **`Chocolatey Package Manager`** to help us install all the needed components witout using the browser to click here, click there, unzip this, unzip that. We are going to use some plain commands, *all righty* ?
 
-You can follow the tutorial with [this video on Youtube](https://www.youtube.com/watch?v=ijTzMk0G4V8).
+You can follow the tutorial with [this video on Youtube](https://youtu.be/BWjmgn07VgE).
 
 ### Install Chocolatey
 
